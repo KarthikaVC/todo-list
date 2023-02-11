@@ -10,8 +10,10 @@ function TodoItem(props){
 return (
 <div className={`todo ${todo.isCompleted ? "complete" : ""}`}>
     {todo.text}
+    <div>
     <button onClick={() => completeTodo(index)}>Complete</button>
-    <button onClick={() => removeTodo(index)}>x</button>
+    <button onClick={() => removeTodo(index)}>Remove!</button>
+    </div>
 </div>
 );
 }
